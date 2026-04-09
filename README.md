@@ -11,10 +11,11 @@ pip install -r requirements.txt
 ## Fetch API data
 
 ```bash
-python -c "from src.data_collection import fetch_country_metadata; fetch_country_metadata()"
+python -c "from API_call import get_country_metadata; get_country_metadata()"
 ```
 
-This will call the REST Countries API and save `data/country_metadata.csv` locally.
+This will call the API for REST Countries url: https://restcountries.com/v3.1/all?fields=name,cca3,region,subregion,population 
+and save `data/country_metadata.csv` locally.
 
 ## Tests
 
