@@ -3,3 +3,6 @@ requests
 numpy
 matplotlib
 json
+scikit-learn
+seaborn
+pathlib
