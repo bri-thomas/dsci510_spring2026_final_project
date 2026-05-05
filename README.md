@@ -2,15 +2,28 @@
 
 This project explores how the balance between annual working hours and national happiness levels varies across countries.
 
-## Project overview
+## Project Introduction
 
 - **Goal:** Investigate how annual working hours per worker relate to life evaluation / happiness scores at the country level.
-- **Data:** 
-  - Annual working hours per worker from Our World in Data. [web:47][web:11]
-  - World Happiness Report data (Figure 2.1, ladder scores). [web:55][web:68]
-  - Country metadata (region, subregion, population) from the REST Countries API. [web:33]
+
+## Data Sources
+  - Annual working hours per worker from Our World in Data.
+https://ourworldindata.org/grapher/annual-working-hours-per-worker.csv?v=1&csvType=full&useColumnShortNames=false
+  - World Happiness Report data (Figure 2.1, ladder scores).
+https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx
+  - Country metadata (region, subregion, population) from the REST Countries API.
+https://restcountries.com/v3.1/all?fields=name,cca3,region,subregion,population
+
+| Data Source # | Name / Short Description    | Source URL                                                                 | Type              | List of Fields                                                                                                                                   | Format | Est. Data Size     |
+|---------------|----------------------------|----------------------------------------------------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------------------|
+| 1             | International Time-Use Data | https://ourworldindata.org/grapher/annual-working-hours-per-worker.csv?v=1&csvType=full&useColumnShortNames=false                                      | Webpage w/ File   | country, year, hours_work, hours_leisure, hours_personal_care, hours_sleep                                                                       | CSV    | 500–2,000 rows     |
+| 2             | World Happiness Report      | https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx                                        | Webpage w/ File   | Happiness score, gdp (statistics of GDP), healthy_life_expectancy, social_support, freedom, generosity, corruption_perception, positive/negative_affect | CSV/XML | 500–1,000 rows     |
+| 3             | Country Metadata            | https://restcountries.com/v3.1/all?fields=name,cca3,region,subregion,population              | API               | name, country_code, region, subregion, population, possibly income_level                                                                         | JSON   | ≈200 countries     
+
 - **Methods:** Data cleaning and merging in Python, exploratory visualizations, correlation analysis, and K-Means clustering to identify work–happiness profiles.
 
+
+# How to Run
 ## Repository structure
 
 ```text
