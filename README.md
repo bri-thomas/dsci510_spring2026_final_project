@@ -4,7 +4,7 @@ This project explores how the balance between annual working hours and national 
 
 ## Project Introduction
 
-- **Goal:** Investigate how annual working hours per worker relate to life evaluation / happiness scores at the country level.
+**Goal:** Investigate how annual working hours per worker relate to life evaluation / happiness scores at the country level.
 
 ## Data Sources
 
@@ -16,17 +16,17 @@ This project explores how the balance between annual working hours and national 
 
 ## Analysis
 
-- **Description:** In this project, I combined country‑level data on annual working hours per worker, life‑evaluation scores from the World Happiness Report, and country metadata (region, subregion, population) to study how work time relates to national happiness across countries. After cleaning and merging these sources into a single dataset, I performed exploratory data analysis, starting with scatter plots and correlation measures to assess the overall relationship between working hours and happiness, which showed a generally negative association but with substantial variation. To capture more nuanced patterns, I applied K‑Means clustering to the standardized work‑hours and happiness variables, identifying four distinct “work–happiness profiles,” including low‑work/high‑happiness groups and high‑work/moderately‑high‑happiness groups, and then examined how these clusters differ in average values and regional composition. 
+**Description:** In this project, I combined country‑level data on annual working hours per worker, life‑evaluation scores from the World Happiness Report, and country metadata (region, subregion, population) to study how work time relates to national happiness across countries. After cleaning and merging these sources into a single dataset, I performed exploratory data analysis, starting with scatter plots and correlation measures to assess the overall relationship between working hours and happiness, which showed a generally negative association but with substantial variation. To capture more nuanced patterns, I applied K‑Means clustering to the standardized work‑hours and happiness variables, identifying four distinct “work–happiness profiles,” including low‑work/high‑happiness groups and high‑work/moderately‑high‑happiness groups, and then examined how these clusters differ in average values and regional composition. 
 
-- **Methods:** Data cleaning and merging in Python, exploratory visualizations, correlation analysis, and K-Means clustering to identify work–happiness profiles.
+**Methods:** Data cleaning and merging in Python, exploratory visualizations, correlation analysis, and K-Means clustering to identify work–happiness profiles.
 
 ## Results
 
-- **Summary:** Results show that work hours and national happiness are related but not in a simple one‑line way. Overall, countries with higher annual working hours per worker tend to report lower happiness scores, consistent with prior evidence that long working time can reduce life satisfaction on average. However, when I clustered countries using K‑Means on work hours and happiness, I found four distinct profiles: a low‑work, high‑happiness group; a high‑work, moderate‑happiness group; a moderate‑work, low‑happiness group; and a very high‑work, low‑happiness group. A key insight observed the highest happiness in low‑work countries but also a sizable group of high‑work countries that remain relatively happy. Region counts within clusters suggest that these patterns differ across parts of the world (for example, very high‑work, low‑happiness entries are concentrated in Europe and the Americas, while high‑work, moderately high‑happiness entries are more common in Africa and Asia), reinforcing the idea that economic, social, and cultural context moderates how work intensity translates into well‑being.
+**Summary:** Results show that work hours and national happiness are related but not in a simple one‑line way. Overall, countries with higher annual working hours per worker tend to report lower happiness scores, consistent with prior evidence that long working time can reduce life satisfaction on average. However, when I clustered countries using K‑Means on work hours and happiness, I found four distinct profiles: a low‑work, high‑happiness group; a high‑work, moderate‑happiness group; a moderate‑work, low‑happiness group; and a very high‑work, low‑happiness group. A key insight observed the highest happiness in low‑work countries but also a sizable group of high‑work countries that remain relatively happy. Region counts within clusters suggest that these patterns differ across parts of the world (for example, very high‑work, low‑happiness entries are concentrated in Europe and the Americas, while high‑work, moderately high‑happiness entries are more common in Africa and Asia), reinforcing the idea that economic, social, and cultural context moderates how work intensity translates into well‑being.
 
 # How to Run
 
-- This section describes how to reproduce the data fetching, preprocessing, and analysis for the project. You do not need any API keys for these steps; all data sources are public and the REST Countries API is open and keyless.
+This section describes how to reproduce the data fetching, preprocessing, and analysis for the project. You do not need any API keys for these steps; all data sources are public and the REST Countries API is open and keyless.
 
 ## Directory structure
 
